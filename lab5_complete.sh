@@ -1,7 +1,7 @@
 option=1    
 while [ $option != 0 ]  
 do                                                                                                                                                                     
-	echo "Please select your option from the list below"                                                                                                                 
+	echo "What math operation do you need done?"                                                                                                                 
 	echo "1: Addition" 
 	echo "2: Subtraction"
 	echo "3: Multiplication"
