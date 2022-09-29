@@ -1,0 +1,54 @@
+option=1    
+#Task 1: create a while loop that will follow the menu below
+#The variable "option" has already been made for you, 
+#you will just need to use that along with the while loop.
+	echo "What math operation do you need done?" #The list of menu options used for the calculator.                                                                                                                 
+	echo "1: Addition" 
+	echo "2: Subtraction"
+	echo "3: Multiplication"
+	echo "4: Division" 
+	echo "5: Exponential"
+	echo "0: Exit" 
+  #The "read" command allows for you to make inputs into the terminal that the script will respond to.
+	read option  
+  #Task 2: Create an if statement that will check to see if the "option" variable is not 0
+  #If it is not 0, then it will display a goodbye message as provided near the end of this script.
+		echo ""    
+		echo "Please input the first number: "                                                                                                                            
+		read first_number   
+		echo "Now the second number: " 
+		read second_number   
+		echo ""  
+    #Task 3: create a case statement that takes in the "option" variable and performs the actions listed above
+    #Each case has its own math functions occuring in them, all you will need to do is start and end each case. 
+	
+		#Addition case
+      result=$(($first_number+$second_number))
+			echo "Your answer is: ${result}"                                                                                                                               
+
+		#Subtraction case
+			result=$(($first_number-$second_number)) 
+			echo "Your answer is: ${result}"
+		
+    #Multiplication case
+			result=$(($first_number*$second_number))  
+			echo "Your answer is: ${result}"
+  
+		#Division Case     
+			result=$(($first_number/$second_number))  
+			echo "Your answer is: ${result}" 
+		
+		#Exponential case  
+			result=1  
+			#Task 4/Challenge: In this case, you will need to create a for loop
+      This for loop will need to start at one and go up until it reaches the second_number
+         
+					result=$(($result*$first_number))                                                                                                                             
+			
+		echo "Your answer is: ${result}"                                                                                                                                   
+	esac 
+	echo "" 
+	else 
+		echo "Thank you for using our system!"                                                                                                                            
+	fi                                                                                                                                                                  
+done
